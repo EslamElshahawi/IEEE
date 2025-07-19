@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+
+}
+
+h1{
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-weight: normal;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #381313;
+    border-radius: 10px;
+}
+
+form{
+    width: 500px;
+    margin: 20px auto;
+}
+
+input{
+    display: block;
+    padding: 8px 16px;
+    font-size: 2em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+}
+
+button{
+    display: block;
+    padding: 8px 16px;
+    font-size: 1.5em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+    cursor: pointer;
+}
+
+
+/* validation styles */
+
+input.valid{
+    border-color: green;
+}
+
+input.invalid{
+    border-color: orange;
+}
+
+input+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid+p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px; 
+}
